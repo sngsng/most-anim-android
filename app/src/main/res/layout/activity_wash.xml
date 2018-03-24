@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.skn.mostanimsample.wash.WashActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/parent_container"
+                android:paddingBottom="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosans_bold"
+                    android:text="세차"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"/>
+
+
+                <FrameLayout
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginRight="-8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:background="@drawable/bg_white_radius13_bg_shadow"
+                        android:id="@+id/wash_coupon_issue_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="28dp"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp"
+                        android:paddingTop="28dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/img_wash_ticket_24_24"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginStart="22dp"
+                                android:fontFamily="@font/notosans_bold"
+                                android:text="세차권 발급하기"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="19sp"/>
+
+                        </LinearLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorWhiteTwo"/>
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/loading_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="centerCrop"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="wash_loading.json"
+                                app:lottie_loop="true"/>
+
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_marginLeft="46dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <include android:id="@+id/loading" layout="@layout/view_wash_loading"/>
+                            <include android:id="@+id/no_coupon" layout="@layout/view_no_wash_coupon"/>
+                            <include android:id="@+id/membership_required" layout="@layout/view_wash_membership_required"/>
+                            <include android:id="@+id/can_charge" layout="@layout/view_wash_can_change_coupon"/>
+                            <include android:id="@+id/issuable" layout="@layout/view_wash_can_issue"/>
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <include android:id="@+id/wash_issued" layout="@layout/view_wash_issued"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/notosans_medium"
+                    android:text="메뉴"
+                    android:textColor="@color/colorGreyishBrown"/>
+
+                <Button
+
+                    android:id="@+id/issuable_anim_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@drawable/shape_rectangle_whitethree_radius13"
+                    android:drawableLeft="@drawable/img_wash_list_20_20"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/notosans_bold"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="24dp"
+                    android:stateListAnimator="@null"
+                    android:text="사용예정 쿠폰"
+                    android:textSize="17sp"
+                    tools:targetApi="lollipop"/>
+
+
+                <Button
+
+                    android:id="@+id/membership_required_anim_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_whitethree_radius13"
+                    android:drawableLeft="@drawable/img_wash_list_20_20"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/notosans_bold"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="24dp"
+                    android:stateListAnimator="@null"
+                    android:text="멤버십 구매필요"
+                    android:textSize="17sp"
+                    tools:targetApi="lollipop"/>
+
+                <Button
+                    android:id="@+id/no_coupon_anim_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_whitethree_radius13"
+                    android:drawableLeft="@drawable/img_wash_list_20_20"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/notosans_bold"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="24dp"
+                    android:stateListAnimator="@null"
+                    android:text="사용가능 쿠폰 없음"
+                    android:textSize="17sp"
+                    tools:targetApi="lollipop"/>
+
+                <Button
+                    android:id="@+id/can_buy_anim_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_whitethree_radius13"
+                    android:drawableLeft="@drawable/img_wash_list_20_20"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/notosans_bold"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="24dp"
+                    android:stateListAnimator="@null"
+                    android:text="쿠폰 구매 가능"
+                    android:textSize="17sp"
+                    tools:targetApi="lollipop"/>
+
+                <Button
+                    android:id="@+id/issue_anim_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_whitethree_radius13"
+                    android:drawableLeft="@drawable/img_wash_list_20_20"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/notosans_bold"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="24dp"
+                    android:stateListAnimator="@null"
+                    android:text="세차권 발급"
+                    android:textSize="17sp"
+                    tools:targetApi="lollipop"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</layout>
+
+
+
+
+

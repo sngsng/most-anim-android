@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MostAnimSample</string>
+    <string name="title_activity_wash">WashActivity</string>
 </resources>

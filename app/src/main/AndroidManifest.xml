@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".wash.WashActivity"
+            android:label="@string/title_activity_wash"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".etc.DuckProgressActivity">
+        </activity>
     </application>
 
 </manifest>

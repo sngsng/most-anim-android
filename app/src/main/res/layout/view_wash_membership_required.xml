@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_bold"
+            android:gravity="start"
+            android:text="사용 가능한 세차쿠폰이 없습니다."
+            android:textColor="@color/colorGreyish"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:visibility="visible"
+            android:id="@+id/info_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_bold"
+            android:gravity="start"
+            android:text="멤버십 카드를 구매하면\n무료 세차 혜택을 드립니다."
+            android:textColor="@color/colorCherry"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</layout>

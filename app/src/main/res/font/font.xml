@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools">
+
+    <font
+        android:font="@font/notosans_black"
+        app:font="@font/notosans_black"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/notosans_bold"
+        app:font="@font/notosans_bold"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/notosans_medium"
+        app:font="@font/notosans_medium"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/notosans_regular"
+        app:font="@font/notosans_regular"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/notosans_light"
+        app:font="@font/notosans_light"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/notosans_demi"
+        app:font="@font/notosans_demi"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/notosans_thin"
+        app:font="@font/notosans_thin"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/nanum_bold"
+        app:font="@font/nanum_bold"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/nanum_extrabold"
+        app:font="@font/nanum_extrabold"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/nanum_light"
+        app:font="@font/nanum_light"
+        tools:ignore="UnusedAttribute"/>
+    <font
+        android:font="@font/nanum_regular"
+        app:font="@font/nanum_regular"
+        tools:ignore="UnusedAttribute"/>
+
+
+</font-family>

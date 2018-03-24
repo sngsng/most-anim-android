@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:transitionOrdering="together"
+    tools:targetApi="lollipop">
+
+    <fade android:duration="@android:integer/config_mediumAnimTime"/>
+    <changeBounds android:duration="@android:integer/config_shortAnimTime"/>
+
+</transitionSet>

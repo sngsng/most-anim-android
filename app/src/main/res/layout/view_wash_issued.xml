@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:background="@drawable/bg_white_radius13_bg_shadow"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_regular"
+
+            android:text="예약번호"
+            android:textColor="@color/colorWarmGrey"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/ticket_no_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nanum_extrabold"
+            android:textColor="@color/colorBlack"
+            android:textSize="50sp"
+            android:text="123-321"/>
+
+        <TextView
+            android:id="@+id/state_guide_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/notosans_regular"
+            android:gravity="center"
+            android:text="본 주문증은 당일 자정까지 유효합니다.\n(미사용시 자동취소/영업시간내 사용)"
+            android:textColor="@color/colorWarmGrey"
+            android:textSize="13sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorWhiteTwo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/notosans_regular"
+            android:text="사용쿠폰"
+            android:textColor="@color/colorWarmGrey"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/coupon_type_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/notosans_medium"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="무료세차쿠폰"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/goods_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_border_black"
+                android:ellipsize="end"
+                android:fontFamily="@font/notosans_medium"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:text="Drive"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/notosans_regular"
+
+            android:text="쿠폰 번호"
+            android:textColor="@color/colorWarmGrey"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/coupon_number_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nanum_extrabold"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="1234-1234-1234"/>
+
+
+        <ImageView
+            android:id="@+id/barcode_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="50dp"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+</layout>
